@@ -8,7 +8,7 @@ Es un lenguaje creado por Facebook en 2012 para **manipular y realizar consultas
 
 Describe las **las capacidades y los requsitos** de los modelos de datos para aplicaciones cliente-servidor.
 
-![](images/GraphQL1.png)
+![](img/GraphQL1.png)
 
 ## Diccionario de datos
 
@@ -27,7 +27,7 @@ Describe las **las capacidades y los requsitos** de los modelos de datos para ap
 
 ## Diagrama de GraphQL
 
-![](images/GraphQL.png)
+![](img/GraphQL.png)
 
 
 ## Creación carpeta proyecto
@@ -36,7 +36,6 @@ Describe las **las capacidades y los requsitos** de los modelos de datos para ap
 mkdir live-graphql
 cd live-graphql
 ```
-
 
 ## Iniciar Proyecto
 ```bash
