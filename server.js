@@ -1,6 +1,7 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const http = require('http');
+
 const path = require('path');
 const mongoose = require('mongoose');
 const { mergeTypeDefs, mergeResolvers } = require('@graphql-tools/merge');
@@ -8,6 +9,7 @@ const { loadFilesSync } = require('@graphql-tools/load-files');
 require('dotenv').config();
 
 // express server
+
 const app = express();
 
 // db
@@ -29,12 +31,14 @@ const db = async () => {
 db();
 
 // typeDefs
+
 const typeDefs = mergeTypeDefs(loadFilesSync(path.join(__dirname, './typeDefs')));
 // resolvers
 const resolvers = mergeResolvers(loadFilesSync(path.join(__dirname, './resolvers')));
 
 //graphql server
 const apolloServer = new ApolloServer({
+
     typeDefs,
     resolvers,
 });
