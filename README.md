@@ -54,6 +54,12 @@ yarn add express@4.17.1
 yarn add graphql@15.0.0
 yarn add graphql-tools@7.0.2
 yarn add mongoose@5.9.7
+yarn add firebase-admin@8.10.0
+yarn add shortid@2.2.15
+yarn add graphql-scalars@1.1.0
+yarn add cors@2.8.5
+yarn add cloudinary@1.21.0
+yarn add body-parser@1.19.0
 ```
 
 ## Ejecución Proyecto
