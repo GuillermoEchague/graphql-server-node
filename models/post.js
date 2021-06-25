@@ -5,24 +5,24 @@ const postSchema = new mongoose.Schema(
     {
         content: {
             type: String,
-            require: "Content is required"
+            required: "Content is required"
         },
         image: {
             url: {
-                type: String,
+                type: String, 
                 default: "https://via.placeholder.com/200x200.png?text=Post"
             },
-            public_id:{
+            public_id: {
                 type: String,
                 default: Date.now
             }
         },
         postedBy: {
             type: ObjectId,
-            ref: "User"
+            ref: "User" 
         }
     },
-    {timestamps: true}
+    { timestamps: true }
 );
 
 module.exports = mongoose.model("Post", postSchema);
